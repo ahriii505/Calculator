@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A new web page">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="Clc.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="calc">
+      <input type="text" name="screen" readonly>
+      <hr>
+      <div class="button">
+        <button type="button" onclick="calc.screen.value += '('">(</button>
+        <button type="button" onclick="calc.screen.value += ')'">)</button>
+        <button type="button" onclick="calc.screen.value = ''" class="clear">
+          C</button>
+        <button type="button" onclick="calc.screen.value = calc.screen.value.slice(0,-1)" class="clear">
+          &larr;</button>
+        <button type="button" onclick="calc.screen.value += '7'" class="number">
+          7</button>
+        <button type="button" onclick="calc.screen.value += '8'" class="number">
+          8</button>
+        <button type="button" onclick="calc.screen.value += '9'" class="number">
+          9</button>
+        <button type="button" onclick="calc.screen.value += '/'">
+          /</button>
+        <button type="button" onclick="calc.screen.value += '4'" class="number">
+          4</button>
+        <button type="button" onclick="calc.screen.value += '5'" class="number">
+          5</button>
+        <button type="button" onclick="calc.screen.value += '6'" class="number">
+          6</button>
+        <button type="button" onclick="calc.screen.value += '*'">*</button>
+        <button type="button" onclick="calc.screen.value += '1'" class="number">
+          1</button>
+        <button type="button" onclick="calc.screen.value += '2'" class="number">
+          2</button>
+        <button type="button" onclick="calc.screen.value += '3'" class="number">
+          3</button>
+        <button type="button" onclick="calc.screen.value += '-'">-</button>
+        <button type="button" onclick="calc.screen.value += '.'"class="number">.</button>
+        <button type="button" onclick="calc.screen.value += '0'" class="number">
+          0</button>
+        <button type="button" onclick="calc.screen.value = eval(calc.screen.value)" class="equal">=</button>
+        <button type="button" onclick="calc.screen.value += '+'">+</button>
+      </div>
+    </form>
+    <script src="CLR.js"></script>
+</body>
+</html>
